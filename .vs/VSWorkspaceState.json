@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\app",
+    "\\app\\Http",
+    "\\app\\Http\\Controllers",
+    "\\config",
+    "\\database\\migrations",
+    "\\resources",
+    "\\resources\\views",
+    "\\routes"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\app\\Http\\Controllers\\TodoController.php",
   "PreviewInSolutionExplorer": false
 }

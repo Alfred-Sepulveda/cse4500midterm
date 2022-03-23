@@ -7,7 +7,7 @@
     <h1>Calendar</h1>
 
 @stop
-<a href="{{ route('event.create') }} " class="btn btn-success" >New Event Entry</a>
+<a href="{{ route('event.create') }} " class="btn float-right btn-success" >New Event Entry</a>
 @section('content')
 <div class="row">
   <div class="col-md-12">

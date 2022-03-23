@@ -1,0 +1,1 @@
+return json_encode( compact('events')['events'] );

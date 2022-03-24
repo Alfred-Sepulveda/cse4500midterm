@@ -3,13 +3,14 @@
     "",
     "\\app",
     "\\app\\Http",
-    "\\app\\Http\\Controllers",
+    "\\app\\Models",
     "\\config",
-    "\\database\\migrations",
     "\\resources",
     "\\resources\\views",
+    "\\resources\\views\\calendar",
+    "\\resources\\views\\todos",
     "\\routes"
   ],
-  "SelectedNode": "\\app\\Http\\Controllers\\TodoController.php",
+  "SelectedNode": "\\resources\\views\\calendar.blade.php",
   "PreviewInSolutionExplorer": false
 }

@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ManufacturerSupport;
 
-class ManufacturersupportController extends Controller
+class ManufacturerSupportController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +14,8 @@ class ManufacturersupportController extends Controller
      */
     public function index()
     {
-        //
+        $manufacturersupport = ManufacturerSupport::all();
+        return view('manufacturersupport',compact('manufacturersupport'));//
     }
 
     /**
@@ -23,7 +25,7 @@ class ManufacturersupportController extends Controller
      */
     public function create()
     {
-        //
+        return view('manufacturersupport.create');    //
     }
 
     /**
@@ -34,9 +36,16 @@ class ManufacturersupportController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $validated = $request->validate([
+            'Address' =>'required',
+            'PhoneNumber' => 'required',
+            'ContactName' => 'required',
+            'Email' => 'required',
+        ]);
 
+        return $this->index();
+    }
+     
     /**
      * Display the specified resource.
      *
@@ -45,7 +54,8 @@ class ManufacturersupportController extends Controller
      */
     public function show($id)
     {
-        //
+        manufacturersupport = ManufacturerSupport::find($id);
+        return view('manufacturersupport.show',compact('manufacturersupport'));
     }
 
     /**

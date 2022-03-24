@@ -13,11 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('ManufacturersSalesContactTable', function (Blueprint $table) {
+        Schema::create('manufacturers_sales', function (Blueprint $table) {
             $table->id();
             $table->string('Address');
             $table->string('PhoneNumber');
             $table->string('ContactName');
+            $table->string('Email');
             $table->timestamps();
         });
     }

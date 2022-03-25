@@ -17,7 +17,7 @@
       </thead>
       <tbody>
 
-        @foreach($users AS $user)
+        @foreach($equipments AS $equipment)
         <tr>
           <td>{{ $equipment->id }}</td>
           <td>{{ $equipment->HardwareSpecs }}</td>

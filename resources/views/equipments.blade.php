@@ -26,7 +26,7 @@
           <td>{{ $equipment->PurchaseDate }}</td>
           <td><a class="btn btn-default btn-sm" href="{{ route('equipments.show',['equipment'=>$equipment->id]) }}">View</a></td>
         </tr>
-        @endforeach
+        
 
       </tbody>
     </table>

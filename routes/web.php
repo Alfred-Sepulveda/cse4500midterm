@@ -17,17 +17,17 @@ use App\Http\Controllers\EventController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/todos', function () {
-    return view('todos');
+Route::get('/manufacturersales', function () {
+    return view('manufacturersales');
 });
-Route::get('/calendar', function () {
-    return view('calendar');
+Route::get('/manufacturersupport', function () {
+    return view('manufacturersupport');
 });
-Route::get('/board', function () {
-    return view('board');
+Route::get('/users', function () {
+    return view('users');
 });
-Route::get('/events-feed', function () {
-    return view('events-feed');    
+Route::get('/equipment', function () {
+    return view('equipment');    
 });
 
 
@@ -42,9 +42,13 @@ Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
 });
-Route::resource('/todos', TodoController::class);
+Route::resource('/equipment', EquipmentController::class);
 
-Route::resource('/event', EventController::class);
+Route::resource('/users', UsersController::class);
+
+Route::resource('/manufacturersales', ManufacturerSalesEventController::class);
+
+Route::resource('/manufacturersupport', ManufacturerSupportController::class);
 
 Route::fallback(function (){
     return view('fallback');

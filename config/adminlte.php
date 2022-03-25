@@ -14,8 +14,8 @@ return [
     |
     */
 
-    'title' => 'AdminLTE 3',
-    'title_prefix' => '',
+    'title' => 'Equipment Inventory',
+    'title_prefix' => 'Midterm Assignment',
     'title_postfix' => '',
 
     /*
@@ -230,18 +230,18 @@ return [
         'text' => 'search',
     ],     
     [
-        'text' => 'To Do\'s',
-        'url'  => 'todos',
+        'text' => 'Equipment Inventory',
+        'url'  => 'equipment',
         'icon' => 'fas fa-fw fa-list-alt',
     ],
     [         
-        'text' => 'Calendar',
-        'url'  => 'calendar',
+        'text' => 'Sales Contact',
+        'url'  => 'manufacturerssales',
         'icon' => 'fas fa-fw fa-calendar-alt',
     ],
     [
-        'text' => 'Board',
-        'url'  => 'board',
+        'text' => 'Support',
+        'url'  => 'manufacturersupport',
         'icon' => 'fas fa-fw fa-newspaper',
     ]
 ],

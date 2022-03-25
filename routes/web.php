@@ -51,7 +51,7 @@ Route::resource('/equipments', EquipmentController::class);
 
 Route::resource('/users', UserController::class);
 
-Route::resource('/manufacturersales', ManufacturerSaleEventController::class);
+Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
 Route::resource('/manufacturersupport', ManufacturerSupportController::class);
 

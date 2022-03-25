@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('LastName');
             $table->string('FirstName');
             $table->string('Email');
-            $table->integer('ContactNumber');
+            $table->string('ContactNumber');
             $table->integer('EmployeeID');
             $table->string('HistoryServices');
             $table->timestamps();

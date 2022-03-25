@@ -254,7 +254,7 @@ return [
         'icon' => 'fas fa-fw fa-calendar-alt',
         'submenu' => [
             [
-                'text' => 'Add Sales Contact'
+                'text' => 'Add Sales Contact',
                 'url'  => 'manufacturerssales',
             ],
         ],

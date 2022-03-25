@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use app\Models\User;
 
-class UsersController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -61,7 +61,7 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        $user= user::find($id);
+        $user = User::find($id);
         return view('users.show', compact('user'));
     }
 

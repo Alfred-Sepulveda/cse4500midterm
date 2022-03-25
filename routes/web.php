@@ -49,7 +49,7 @@ Route::get('/db-migrate', function () {
 });
 Route::resource('/equipment', EquipmentController::class);
 
-Route::resource('/users', UsersController::class);
+Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSalesEventController::class);
 

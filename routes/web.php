@@ -31,8 +31,8 @@ Route::get('/manufacturersupport', function () {
 Route::get('/users', function () {
     return view('users');
 });
-Route::get('/equipment', function () {
-    return view('equipment');    
+Route::get('/equipments', function () {
+    return view('equipments');    
 });
 
 
@@ -47,7 +47,7 @@ Route::get('/db-migrate', function () {
     Artisan::call('migrate');
     echo Artisan::output();
 });
-Route::resource('/equipment', EquipmentController::class);
+Route::resource('/equipments', EquipmentController::class);
 
 Route::resource('/users', UserController::class);
 

@@ -235,25 +235,40 @@ return [
         'submenu' => [
             [
                 'text' => 'Add Inventory',
-                'url' => 'users'
+                'url' => 'equipment'
             ],
         ],
     ],
     [
         'text' => 'Users',
-        'url'  => 'users',
         'icon' => 'fas fa-fw fa-list-alt',
+        'submenu' => [
+            [
+                'text' => 'Add Users',
+                'url' => 'users'
+            ],
+        ],
     ],
     [         
         'text' => 'Sales Contact',
-        'url'  => 'manufacturerssales',
         'icon' => 'fas fa-fw fa-calendar-alt',
+        'submenu' => [
+            [
+                'text' => 'Add Sales Contact'
+                'url'  => 'manufacturerssales',
+            ],
+        ],
     ],
     [
         'text' => 'Support',
-        'url'  => 'manufacturersupport',
         'icon' => 'fas fa-fw fa-newspaper',
-    ]
+        'submenu' => [
+            [
+                'text' => 'Add Support Contact'
+                'url'  => 'manufacturersupport',
+            ],
+        ],
+    ],
 ],
 
     /*

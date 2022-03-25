@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\EventController;
-use App\Http\Controllers\UsersController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSalesController;
 use App\Http\Controllers\ManufacturerSupportController;
 use App\Http\Controllers\EquipmentController;

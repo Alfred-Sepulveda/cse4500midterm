@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('equipment_category', function (Blueprint $table) {
             $table->id();
             $table->string('HardwareSpecs');
-            $table->integer('PurchaseInfoInvoice');
+            $table->integer('PurchaseInvoice');
             $table->double('Price',20,2);
             $table->DateTime('PurchaseDate');
             $table->timestamps();

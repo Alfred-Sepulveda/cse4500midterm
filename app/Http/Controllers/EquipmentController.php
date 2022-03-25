@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\Models\Equipment;
 
 class EquipmentController extends Controller
 {
@@ -13,7 +15,8 @@ class EquipmentController extends Controller
      */
     public function index()
     {
-        //
+        $equipments = Equipment::all();
+        return view('equipments', compact('equipments'));
     }
 
     /**
@@ -23,7 +26,7 @@ class EquipmentController extends Controller
      */
     public function create()
     {
-        //
+        return view('equipment.create');
     }
 
     /**
@@ -34,7 +37,19 @@ class EquipmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validated = $request->validate([
+            'HardwareSpecs' => 'required',
+            'PurchaseInvoice' => 'required',
+            'Price' => 'required',
+            'PurchaseDate' => 'required',
+        ]);
+        $equipment = Equipment::create([
+            'HardwareSpecs' => $request->HardwareSpecs,
+            'PurchaseInvoice' => $request->PurchaseInvoice,
+            'Price' => $request->Price,
+            'PurchaseDate' => $request->PurchaseDate,
+        ]);
+        return $this->index();
     }
 
     /**
@@ -45,7 +60,8 @@ class EquipmentController extends Controller
      */
     public function show($id)
     {
-        //
+        equipment = Equipment::find($id);
+        return view('equipments.show',compact('equipment'));
     }
 
     /**

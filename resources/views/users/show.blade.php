@@ -11,5 +11,5 @@
   <h2>{{ $user->FirstName; }}</h2>
   <div><p>{{ $user->Email; }} </p></div>
   <div><p>{{ $user->ContactNumber; }} </p></div>
-  <div><p>{{ $user->HistoryServices; }} % finished</p></div>
+  <div><p>{{ $user->HistoryServices; }} </p></div>
 @stop

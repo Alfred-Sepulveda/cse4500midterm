@@ -43,13 +43,13 @@ class UsersController extends Controller
             'ContactNumber' => 'required',
             'HistoryServices' => 'required',
         ]);
-        $user = User::create({
+        $user = User::create([
             'LastName' => $request->LastName,
             'FirstName' => $request->FirstName,
             'Email' => $request->Email,
             'ContactNumber' => $request->ContactNumber,
             'HistoryServices' => $request->HistoryServices,
-        })
+        ])
         return $this->index();
     }
 

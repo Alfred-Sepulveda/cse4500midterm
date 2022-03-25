@@ -235,7 +235,7 @@ return [
         'submenu' => [
             [
                 'text' => 'Add Inventory',
-                'url' => 'equipment',
+                'url' => 'equipments',
             ],
         ],
     ],

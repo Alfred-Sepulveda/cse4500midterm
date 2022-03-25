@@ -49,7 +49,7 @@ class UsersController extends Controller
             'Email' => $request->Email,
             'ContactNumber' => $request->ContactNumber,
             'HistoryServices' => $request->HistoryServices,
-        ])
+        ]);
         return $this->index();
     }
 

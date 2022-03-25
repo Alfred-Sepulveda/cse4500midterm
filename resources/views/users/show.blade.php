@@ -1,12 +1,15 @@
 @extends('adminlte::page')
 
-@section('title', 'To Do List')
+@section('title', 'Users Added')
 
 @section('content_header')
-    <h1>To Do's</h1>
+    <h1>Added Users</h1>
 @stop
 
 @section('content')
-  <h2>{{ $todo->title; }}</h2>
-  <div><p>{{ $todo->progress; }}% finished</p></div>
+  <h2>{{ $user->EmployeeID; }}</h2>
+  <div><p>{{ $user->LastName; FirstName; }} </p></div>
+  <div><p>{{ $user->Email; }} </p></div>
+  <div><p>{{ $user->ContactNumber; }} </p></div>
+  <div><p>{{ $user->HistoryServices; }} % finished</p></div>
 @stop

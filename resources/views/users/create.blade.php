@@ -7,10 +7,13 @@
 @stop
 
 @section('content')
-<form method="post" action="{{ route('todos.store') }}" >
+<form method="post" action="{{ route('users.store') }}" >
     @csrf
-    <x-adminlte-input name="title" label="Title" />
-    <x-adminlte-input name="progress" type="number" min=0 max=100 label="Progress" />
+    <x-adminlte-input name="LastName" label="Last Name" />
+    <x-adminlte-input name="FirstName" label="First Name" />
+    <x-adminlte-input name="Email" label="Email" />
+    <x-adminlte-input name="ContactNumber" label="Contact Number" />
+    <x-adminlte-input name="HistoryServices" label="Services Previously Done if any" />
     <x-adminlte-button type="Submit" label="Submit" />
 </form>
 @stop

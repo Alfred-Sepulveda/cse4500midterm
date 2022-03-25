@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Users extends Model
 {
-    protected $fillable = ['LastName','FirstName','Email','ContactNumber','EmployeeID','HistoryServices'];
+    protected $fillable = ['LastName','FirstName','Email','ContactNumber','HistoryServices'];
     use HasFactory;
 }
     

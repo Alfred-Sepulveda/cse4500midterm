@@ -231,7 +231,17 @@ return [
     ],     
     [
         'text' => 'Equipment Inventory',
-        'url'  => 'equipment',
+        'icon' => 'fas fa-fw fa-list-alt',
+        'submenu' => [
+            [
+                'text' => 'Add Inventory',
+                'url' => 'users'
+            ],
+        ],
+    ],
+    [
+        'text' => 'Users',
+        'url'  => 'users',
         'icon' => 'fas fa-fw fa-list-alt',
     ],
     [         

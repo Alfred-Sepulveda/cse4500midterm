@@ -5,12 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\ManufacturerSale;
 
-class ManufacrurerSaleController extends Controller
+class ManufacturerSaleController extends Controller
 {
 
     public function index()
     {
-        $manufacturersales = ManufacrurerSales::all();
+        $manufacturersales = ManufacturerSales::all();
         return view('manufacurersales', compact('manufacurersales'));
     }
 
@@ -30,7 +30,7 @@ class ManufacrurerSaleController extends Controller
             'ContactName' => 'required',
             'Email' => 'required',
         ]);
-        $manufacturersale = ManufacrurerSales::create([
+        $manufacturersale = ManufacturerSales::create([
             'CompanyName' => $request->CompanyName,
             'Address' => $request->Address,
             'PhoneNumber' => $request->PhoneNumber,
@@ -45,7 +45,7 @@ class ManufacrurerSaleController extends Controller
 
     public function show($id)
     {
-        $manufacturersale= ManufacrurerSales::find($id);
+        $manufacturersale= ManufacturerSales::find($id);
         return view('manufacurersales.show',compact('manufacurersale'));
     }
 

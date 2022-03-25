@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('FirstName');
             $table->string('Email');
             $table->integer('ContactNumber');
-            $table->increments('EmployeeID');
+            $table->integer('EmployeeID',true,true);
             $table->string('HistoryServices');
             $table->timestamps();
         });

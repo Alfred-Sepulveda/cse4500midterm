@@ -255,7 +255,7 @@ return [
         'submenu' => [
             [
                 'text' => 'Add Sales Contact',
-                'url'  => 'manufacturerssales',
+                'url'  => 'manufacturersales',
             ],
         ],
     ],
@@ -265,7 +265,7 @@ return [
         'submenu' => [
             [
                 'text' => 'Add Support Contact',
-                'url'  => 'manufacturersupport',
+                'url'  => 'manufacturersupports',
             ],
         ],
     ],

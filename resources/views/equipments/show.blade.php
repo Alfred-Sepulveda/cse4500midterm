@@ -3,7 +3,7 @@
 @section('title', 'Equipment Added')
 
 @section('content_header')
-    <h1>Added Equipement</h1>
+    <h1>Equipement</h1>
 @stop
 
 @section('content')

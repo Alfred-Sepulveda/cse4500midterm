@@ -5,7 +5,6 @@ use App\Http\Controllers\TodoController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
-use App\Http\Controllers\ManufacturerSupportController;
 use App\Http\Controllers\EquipmentController;
 use app\Http\Controllers\ManufacturerSupportController;  
 /*

@@ -12,7 +12,7 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 10px">#</th><th>Hardware Specs</th><th>Invoice Number</th><th>Price</th><th>Date of Purchase</th><th style="width: 40px">Action</th>
+          <th style="width: 10px">#</th><th>Hardware Specs</th><th>Invoice Number</th><th>Price</th><th>Date of Purchase</th>
         </tr>
       </thead>
       <tbody>

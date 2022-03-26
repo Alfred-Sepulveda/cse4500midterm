@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Add Company')
+@section('title', 'Company')
 
 @section('content_header')
-    <h1>Company</h1>
+    <h1>Company Sales Page </h1>
 @stop
 
 @section('content')
@@ -33,7 +33,7 @@
     </table>
   </div>
 </div>
-<a href="{{ route('manufacturersales.create') }} " class="btn btn-primary" >Create</a>
+<a href="{{ route('manufacturersales.create') }} " class="btn btn-primary" >Add</a>
 @stop
 
 @section('js')

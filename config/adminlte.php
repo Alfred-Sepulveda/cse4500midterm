@@ -234,7 +234,7 @@ return [
         'icon' => 'fas fa-fw fa-list-alt',
         'submenu' => [
             [
-                'text' => 'Add Inventory',
+                'text' => 'View Inventory',
                 'url' => 'equipments',
             ],
         ],
@@ -244,7 +244,7 @@ return [
         'icon' => 'fas fa-fw fa-list-alt',
         'submenu' => [
             [
-                'text' => 'Add Users',
+                'text' => 'View Users',
                 'url' => 'users',
             ],
         ],
@@ -254,7 +254,7 @@ return [
         'icon' => 'fas fa-fw fa-calendar-alt',
         'submenu' => [
             [
-                'text' => 'Add Sales Contact',
+                'text' => 'View Sales Contacts',
                 'url'  => 'manufacturersales',
             ],
         ],
@@ -264,7 +264,7 @@ return [
         'icon' => 'fas fa-fw fa-newspaper',
         'submenu' => [
             [
-                'text' => 'Add Support Contact',
+                'text' => 'View Support Contacts',
                 'url'  => 'manufacturersupports',
             ],
         ],

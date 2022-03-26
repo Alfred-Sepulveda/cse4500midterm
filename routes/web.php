@@ -6,7 +6,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
-use App\Http\Controllers\ManufacturerSupportController;  
+use App\Http\Controllers\ManufacturerSupperController;  
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,7 +52,7 @@ Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
-Route::resource('/manufacturersupports', ManufacturerSupportController::class);
+Route::resource('/manufacturersupports', ManufacturerSupperController::class);
 
 Route::fallback(function (){
     return view('fallback');

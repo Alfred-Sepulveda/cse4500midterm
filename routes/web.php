@@ -26,7 +26,7 @@ Route::get('/manufacturersales', function () {
     return view('manufacturersales');
 });
 Route::get('/manufacturersupport', function () {
-    return view('manufacturersupport');
+    return view('manufacturersupports');
 });
 Route::get('/users', function () {
     return view('users');
@@ -53,7 +53,7 @@ Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
-Route::resource('/manufacturersupport', ManufacturerSupportController::class);
+Route::resource('/manufacturersupports', ManufacturerSupportController::class);
 
 Route::fallback(function (){
     return view('fallback');

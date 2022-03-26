@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'To Do List')
+@section('title', 'Company')
 
 @section('content_header')
-    <h1>To Do's</h1>
+    <h1>Company Support Page </h1>
 @stop
 
 @section('content')
@@ -12,17 +12,20 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Action</th>
+          <th style="width: 10px">#</th><th>CompanyName</th><th>Address</th><th>ContactName</th><th>PhoneNumber</th><th>Email</th>
         </tr>
       </thead>
       <tbody>
 
-        @foreach($todos AS $todo)
+        @foreach($manufacturer_supports AS $manufacturersupport)
         <tr>
-          <td>{{ $todo->id }}</td>
-          <td>{{ $todo->title }}</td>
-          <td><div class="progress progress-xs"><div class="progress-bar progress-bar-danger" style="width: {{ $todo->progress }}%"></div></div></td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('todos.show',['todo'=>$todo->id]) }}">View</a></td>
+          <td>{{ $manufacturersupport->id }}</td>
+          <td>{{ $manufacturersupport->CompanyName }}</td>
+          <td>{{ $manufacturersupport->Address }}</td>
+          <td>{{ $manufacturersupport->ContactName }}</td>
+          <td>{{ $manufacturersupport->PhoneNumber }}</td>
+          <td>{{ $manufacturersupport->Email }}</td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('manufacturersupports.show',['manufacturersupport'=>$manufacturersupport->id]) }}">View</a></td>
         </tr>
         @endforeach
 
@@ -30,7 +33,7 @@
     </table>
   </div>
 </div>
-<a href="{{ route('todos.create') }} " class="btn btn-primary" >Create</a>
+<a href="{{ route('manufacturersupports.create') }} " class="btn btn-primary" >Add</a>
 @stop
 
 @section('js')

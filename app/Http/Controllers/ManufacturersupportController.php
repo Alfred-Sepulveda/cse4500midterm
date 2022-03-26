@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ManufacturerSale;
+use App\Models\ManufacturerSupport;
 
 
 class ManufacturerSupportController extends Controller

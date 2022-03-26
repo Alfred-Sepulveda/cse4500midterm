@@ -25,7 +25,7 @@ Route::get('/', function () {
 Route::get('/manufacturersales', function () {
     return view('manufacturersales');
 });
-Route::get('/manufacturersupport', function () {
+Route::get('/manufacturersupports', function () {
     return view('manufacturersupports');
 });
 Route::get('/users', function () {

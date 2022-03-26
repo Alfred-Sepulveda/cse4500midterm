@@ -6,7 +6,7 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
-use Http\Controllers\ManufacturerSupportController;  
+use App\Http\Controllers\ManufacturerSupportController;  
 /*
 |--------------------------------------------------------------------------
 | Web Routes

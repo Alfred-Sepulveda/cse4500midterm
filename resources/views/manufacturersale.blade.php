@@ -17,7 +17,7 @@
       </thead>
       <tbody>
 
-        @foreach($manufacturer_sale AS $manufacturersale)
+        @foreach($manufacturer_sales AS $manufacturersale)
         <tr>
           <td>{{ $manufacturersale->id }}</td>
           <td>{{ $manufacturersale->CompanyName }}</td>

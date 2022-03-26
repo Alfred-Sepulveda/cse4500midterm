@@ -47,7 +47,7 @@ class ManufacturerSaleController extends Controller
     public function show($id)
     {
         $manufacturersale= ManufacturerSale::find($id);
-        return view('manufacturersales.show',compact('manufacturer_sale'));
+        return view('manufacturersale.show',compact('manufacturer_sale'));
     }
 
 

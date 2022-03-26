@@ -12,7 +12,7 @@ class ManufacturerSaleController extends Controller
     public function index()
     {
         $manufacturer_sales = ManufacturerSale::all();
-        return view('manufacturersale', compact('manufacturersale'));
+        return view('manufacturersale', compact('manufacturersales'));
     }
 
 

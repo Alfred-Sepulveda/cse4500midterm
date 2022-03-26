@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ManufacturerSaleController;
+use App\Http\Controllers\ManufacturersaleController;
 use App\Http\Controllers\ManufacturerSupportController;
 use App\Http\Controllers\EquipmentController;
 
@@ -51,7 +51,7 @@ Route::resource('/equipments', EquipmentController::class);
 
 Route::resource('/users', UserController::class);
 
-Route::resource('/manufacturersales', ManufacturerSaleController::class);
+Route::resource('/manufacturersales', ManufacturersaleController::class);
 
 Route::resource('/manufacturersupport', ManufacturerSupportController::class);
 

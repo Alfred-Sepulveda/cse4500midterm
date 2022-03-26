@@ -1,12 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TodoController;
-use App\Http\Controllers\EventController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
-use App\Http\Controllers\ManufacturerSupperController;  
+use App\Http\Controllers\ManufacturerSupportController;  
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,7 +50,7 @@ Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
-Route::resource('/manufacturersupports', ManufacturerSupperController::class);
+Route::resource('/manufacturersupports', ManufacturerSupportController::class);
 
 Route::fallback(function (){
     return view('fallback');

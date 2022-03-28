@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
+use App\Http\Controllers\SupportController
 use App\Http\Controllers\ManufacturerSupportCont;  
 /*
 |--------------------------------------------------------------------------
@@ -31,7 +32,9 @@ Route::get('/users', function () {
 Route::get('/equipments', function () {
     return view('equipments');    
 });
-
+Route::get('/supports', function () {
+    return view('supports');
+});
 
 Route::get('/db-test', function (){
     try {
@@ -47,6 +50,8 @@ Route::get('/db-migrate', function () {
 Route::resource('/equipments', EquipmentController::class);
 
 Route::resource('/users', UserController::class);
+
+Route::resource('/supports', SupportController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 

@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\ManufacturerSupport;
 
 
-class ManufacturerSupportController extends Controller
+class ManufacturerSupportCont extends Controller
 {
 
     public function index()

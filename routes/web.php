@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
-use App\Http\Controllers\ManufacturerSupportController;
+use App\Http\Controllers\ManufacturerSupportCont;
 
 
 /*
@@ -51,7 +51,7 @@ Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
-Route::resource('/manufacturersupports', ManufacturerSupportController::class);
+Route::resource('/manufacturersupports', ManufacturerSupportCont::class);
 
 Route::fallback(function (){
     return view('fallback');

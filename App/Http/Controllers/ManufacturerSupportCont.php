@@ -3,15 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\ManufacturerSupport;
 
-
-class ManufacturerSupportController extends Controller
+class ManufacturerSupportCont extends Controller
 {
 
     public function index()
     {
-        $manufacturer_supports = ManufacturerSupport::all();
+        $manufacturer_supports = Manufacturer::all();
         return view('manufacturersupport', compact('manufacturer_supports'));
     }
 
@@ -31,7 +29,7 @@ class ManufacturerSupportController extends Controller
             'ContactName' => 'required',
             'Email' => 'required',
         ]);
-        $manufacturersupport = ManufacturerSupport::create([
+        $manufacturersale = ManufacturerSupport::create([
             'CompanyName' => $request->CompanyName,
             'Address' => $request->Address,
             'PhoneNumber' => $request->PhoneNumber,
@@ -46,7 +44,7 @@ class ManufacturerSupportController extends Controller
 
     public function show($id)
     {
-        $manufacturersupport= ManufacturerSupport::find($id);
+        $manufacturersale= ManufacturerSupport::find($id);
         return view('manufacturersupports.show',compact('manufacturersupport'));
     }
 

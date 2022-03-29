@@ -92,6 +92,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        return view('users.destroy');
+        $user = User::destroy($id);
+        return view('users.destroy', compact('user');
     }
 }

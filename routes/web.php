@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
-use App\Http\Controllers\ManufacturerSupportController;  
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -22,16 +21,13 @@ Route::get('/', function () {
 Route::get('/manufacturersales', function () {
     return view('manufacturersales');
 });
-Route::get('/manufacturersupports', function () {
-    return view('manufacturersupports');
-});
+
 Route::get('/users', function () {
     return view('users');
 });
 Route::get('/equipments', function () {
     return view('equipments');    
 });
-
 
 Route::get('/db-test', function (){
     try {
@@ -49,8 +45,6 @@ Route::resource('/equipments', EquipmentController::class);
 Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
-
-Route::resource('/manufacturersupports', ManufacturerSupportController::class);
 
 Route::fallback(function (){
     return view('fallback');

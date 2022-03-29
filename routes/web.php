@@ -5,7 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\ManufacturerSupportCont;
-
+use App\Http\Controllers\TodosController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,8 +24,8 @@ Route::get('/', function () {
 Route::get('/manufacturersales', function () {
     return view('manufacturersales');
 });
-Route::get('/manufacturersupports', function (){
-    return view('manufacturersupports');
+Route::get('/todos', function (){
+    return view('todos');
 });
 Route::get('/users', function () {
     return view('users');
@@ -51,7 +51,7 @@ Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
-Route::resource('/manufacturersupports', ManufacturerSupportCont::class);
+Route::resource('/todos', TodoController::class);
 
 Route::fallback(function (){
     return view('fallback');

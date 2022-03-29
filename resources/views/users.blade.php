@@ -24,8 +24,8 @@
           <td>{{ $user->Email }}</td>
           <td>{{ $user->ContactNumber }}</td>
           <td>{{ $user->HistoryServices }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('users.show',['user'=>$user->id]) }}">View</a></td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('users.destroy',['user'=>$user->id]) }}">Delete</a></td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('users.show',['user'=>$user->id]) }}">View</a>
+          <a class="btn btn-default btn-sm" href="{{ route('users.destroy',['user'=>$user->id]) }}">Delete</a></td>
         </tr>
         @endforeach
 

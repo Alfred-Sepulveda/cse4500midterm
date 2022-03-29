@@ -3,13 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ManufacturerSupport;
+
 
 class ManufacturerSupportCont extends Controller
 {
 
     public function index()
     {
-        $manufacturer_supports = Manufacturer::all();
+        $manufacturer_supports = ManufacturerSupport::all();
         return view('manufacturersupport', compact('manufacturer_supports'));
     }
 

@@ -265,7 +265,7 @@ return [
         'submenu' => [
             [
                 'text' => 'View Support Contacts',
-                'url'  => 'manufacturersupports',
+                'url'  => 'todos',
             ],
         ],
     ],

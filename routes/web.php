@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
+use App\Http\Controllers\ManufacturerSupportController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\app",
-    "\\config",
+    "\\App",
+    "\\App\\Exceptions",
+    "\\App\\Providers",
     "\\database",
-    "\\database\\factories",
-    "\\database\\seeders",
+    "\\database\\migrations",
     "\\resources",
     "\\resources\\views",
-    "\\resources\\views\\manufacturersales",
-    "\\resources\\views\\manufacturersupports"
+    "\\resources\\views\\supports",
+    "\\routes"
   ],
-  "SelectedNode": "\\resources\\views\\equipments.blade.php",
+  "SelectedNode": "\\config\\session.php",
   "PreviewInSolutionExplorer": false
 }

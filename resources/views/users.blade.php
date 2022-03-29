@@ -34,6 +34,8 @@
   </div>
 </div>
 <a href="{{ route('users.create') }} " class="btn btn-primary" >Add</a>
+<a href="{{ route('users.destroy') }} " class="btn btn-primary" >Delete</a>
+
 @stop
 
 @section('js')

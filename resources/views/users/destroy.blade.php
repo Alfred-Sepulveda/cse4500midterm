@@ -11,6 +11,7 @@
   <div><p>{{ $user->Email; }} </p></div>
   <div><p>{{ $user->ContactNumber; }} </p></div>
   <div><p>{{ $user->HistoryServices; }} </p></div>
+  <h2>Would you like to delete?</h2>
   <td><a class="btn btn-default btn-sm" href="{{ route('users.destroy',['user'=>$user->id]) }}">Yes</a>
   <a class="btn btn-default btn-sm" href="{{ route('users.show',['user'=>$user->id]) }}">No</a></td>
 @stop

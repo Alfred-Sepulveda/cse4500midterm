@@ -48,6 +48,8 @@ Route::resource('/users', UserController::class);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
+Route::resource('/manufacturersupports', ManufacturerSupportController::class);
+
 Route::fallback(function (){
     return view('fallback');
 });

@@ -7,9 +7,9 @@
 @stop
 
 @section('content')
-  <h2>{{ $todos->id; }}</h2>
-  <div><p>{{ $todos->name; }}</p></div>
-  <div><p>{{ $todos->email; }}</p></div>
-  <div><p>{{ $todos->phonenumber; }}</p></div>
-  <div><p>{{ $todos->support; }}</p></div>
+  <h2>{{ $todo->id; }}</h2>
+  <div><p>{{ $todo->name; }}</p></div>
+  <div><p>{{ $todo->email; }}</p></div>
+  <div><p>{{ $todo->phonenumber; }}</p></div>
+  <div><p>{{ $todo->support; }}</p></div>
 @stop

@@ -11,8 +11,7 @@ class TodoController extends Controller
     public function index()
     {
         $todos = Todo::all();
-        return redirect('/todos');
-        //return view('todos', compact('todos'));
+        return view('todos', compact('todos'));
     }
 
 
@@ -32,7 +31,8 @@ class TodoController extends Controller
             'title' => $request->title,
             'progress' => $request->progress,
         ]);
-        return $this->index();
+        //return $this->index();
+        return view('todos', compact('todos'));
 
     }
 

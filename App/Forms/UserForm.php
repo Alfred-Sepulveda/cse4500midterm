@@ -18,7 +18,7 @@ function getHistoryServices() {
     return $retVal;
 }
 
-class UsersForm extends Form
+class UserForm extends Form
 {
     public function buildForm()
     {

@@ -245,7 +245,7 @@ return [
         'submenu' => [
             [
                 'text' => 'View Users',
-                'url' => 'users',
+                'url' => 'customer',
             ],
         ],
     ],

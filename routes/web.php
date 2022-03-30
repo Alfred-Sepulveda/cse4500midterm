@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
 //use App\Http\Controllers\ManufacturerSupportCont;
@@ -42,13 +42,13 @@ Route::get('/equipments', function () {
 
 Route::resource('/equipments', EquipmentController::class);
 
-Route::resource('/user', UserController::class);
+Route::resource('/customer', CustomerController::class);
 
-Route::delete('/user/{users}' , [UserController::class, 'deleteItem'])->name('user.deleteItem');
+Route::delete('/customer/{customers}' , [CustomerController::class, 'deleteItem'])->name('customer.deleteItem');
 
-Route::get('/user/delete/{users}', ['as' => 'user.delete', 'uses' => 'UsersController@destroy']);
+Route::get('/customer/delete/{customers}', ['as' => 'customer.delete', 'uses' => 'CustomersController@destroy']);
 
-Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user.destroy');
+Route::delete('/customer/{id}', [CustomerController::class, 'destroy'])->name('customer.destroy');
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 

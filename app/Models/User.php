@@ -9,5 +9,12 @@ class User extends Model
 {
     protected $fillable = ['LastName','FirstName','Email','ContactNumber','HistoryServices'];
     use HasFactory;
+
+    protected $table = 'users';
+
+    public function users()
+    {
+        return $this->belongsTo(Users::class);
+    }
 }
     

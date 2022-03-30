@@ -13,7 +13,7 @@ class UserController extends Controller
     public function index()
     {
         $users = User::all();
-        return view('user.list', compact('users'));
+        return view('users.list', compact('users'));
     }
 
     /**
@@ -27,7 +27,7 @@ class UserController extends Controller
             'method' => 'POST',
             'url' => route('user.store')
         ]);
-        return view('equipment.create', compact('form'));
+        return view('users.create', compact('form'));
     }
 
     /**

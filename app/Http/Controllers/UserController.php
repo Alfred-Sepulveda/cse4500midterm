@@ -92,6 +92,6 @@ class UserController extends Controller
      */
     public function destroy()
     {
-        return view('users.destroy');
+        //
     }
 }

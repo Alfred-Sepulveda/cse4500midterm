@@ -5,20 +5,20 @@ namespace App\Forms;
 use Kris\LaravelFormBuilder\Form;
 use Kris\LaravelFormBuilder\Field;
 
-use App\Models\User;
+use App\Models\Customer;
 
 
 
 function getHistoryServices() {
     $retVal = array();
-    $users = Users::where('id' ,'>' ,0)->get();
-    foreach($users as $user) {
-        $retVal[strval($user["id"])] = strval($user["name"]);
+    $customers = Customers::where('id' ,'>' ,0)->get();
+    foreach($customers as $customer) {
+        $retVal[strval($customer["id"])] = strval($customer["name"]);
     }
     return $retVal;
 }
 
-class UserForm extends Form
+class CustomerForm extends Form
 {
     public function buildForm()
     {

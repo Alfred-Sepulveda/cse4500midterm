@@ -5,16 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Customer extends Model
 {
     protected $fillable = ['name','email','phonenumber','services'];
     use HasFactory;
 
-    protected $table = 'users';
+    protected $table = 'customers';
 
     public function historyservices()
     {
-        return $this->belongsTo(Users::class);
+        return $this->belongsTo(Customers::class);
     }
 }
     

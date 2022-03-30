@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\Customer;
 use Kris\LaravelFormBuilder\FormBuilder;
-use App\Forms\UserForm;
+use App\Forms\CustomerForm;
 
-class UserController extends Controller
+class CustomerController extends Controller
 {
 
     public function index()
     {
-        $users = User::all();
-        return view('users.list', compact('users'));
+        $customers = Customer::all();
+        return view('customers.list', compact('customers'));
     }
 
     /**
@@ -23,11 +23,11 @@ class UserController extends Controller
      */
     public function create(FormBuilder $formBuilder)
     {
-        $form = $formBuilder->create(UserForm::class, [
+        $form = $formBuilder->create(CustomerForm::class, [
             'method' => 'POST',
-            'url' => route('user.store')
+            'url' => route('customer.store')
         ]);
-        return view('users.create', compact('form'));
+        return view('customers.create', compact('form'));
     }
 
     /**
@@ -38,9 +38,9 @@ class UserController extends Controller
      */
     public function store(FormBuilder $formBuilder)
     {
-        $form = $formBuilder->create(UserForm::class);
+        $form = $formBuilder->create(CustomerForm::class);
         $form->redirectIfNotValid();
-        User::create($form->getFieldValues());
+        Customer::create($form->getFieldValues());
         return $this->index();
     }
 
@@ -52,8 +52,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
-        return view('users.show', compact('user'));
+        $customer = Customer::find($id);
+        return view('customers.show', compact('customer'));
     }
 
     /**
@@ -87,7 +87,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        User::destroy($id);
-        return redirect('/users');
+        Customer::destroy($id);
+        return redirect('/customers');
     }
 }

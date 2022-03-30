@@ -42,13 +42,13 @@ Route::get('/equipments', function () {
 
 Route::resource('/equipments', EquipmentController::class);
 
-Route::resource('/users', UserController::class);
+Route::resource('/user', UserController::class);
 
-Route::delete('/users/{users}' , [UserController::class, 'deleteItem'])->name('user.deleteItem');
+Route::delete('/user/{users}' , [UserController::class, 'deleteItem'])->name('user.deleteItem');
 
-Route::get('/users/delete/{users}', ['as' => 'user.delete', 'uses' => 'UsersController@destroy']);
+Route::get('/user/delete/{users}', ['as' => 'user.delete', 'uses' => 'UsersController@destroy']);
 
-Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('user.destroy');
+Route::delete('/user/{id}', [UserController::class, 'destroy'])->name('user.destroy');
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 

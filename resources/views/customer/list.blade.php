@@ -16,15 +16,15 @@
       </thead>
       <tbody>
 
-        @foreach($users AS $user)
+        @foreach($customers AS $customer)
         <tr>
-          <td>{{ $user->id }}</td>
-          <td>{{ $user->name }}</td>
-          <td>{{ $user->email }}</td>
-          <td>{{ $user->phonenumber }}</td>
-          <td>{{ $user->services }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('users.show',['user'=>$user->id]) }}">View</a>
-          <form action="{{route('users.destroy', $user->id)}}" method="post">
+          <td>{{ $customer->id }}</td>
+          <td>{{ $customer->name }}</td>
+          <td>{{ $customer->email }}</td>
+          <td>{{ $customer->phonenumber }}</td>
+          <td>{{ $customer->services }}</td>
+          <td><a class="btn btn-default btn-sm" href="{{ route('$customers.show',['customer'=>$customer->id]) }}">View</a>
+          <form action="{{route('$customers.destroy', $customer->id)}}" method="post">
                 @csrf
                 @method('delete')
                 <div class="buttons are-rounded are-small">
@@ -38,7 +38,7 @@
     </table>
   </div>
 </div>
-<a href="{{ route('users.create') }} " class="btn btn-primary" >Add</a>
+<a href="{{ route('$customers.create') }} " class="btn btn-primary" >Add</a>
 
 
 @stop

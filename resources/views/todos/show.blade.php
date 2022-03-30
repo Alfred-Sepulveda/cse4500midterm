@@ -7,10 +7,9 @@
 @stop
 
 @section('content')
-  <h2>{{ $->EmployeeID; }}</h2>
-  <div><p>{{ $users->LastName; }}</p></div>
-  <div><p>{{ $users->FirstName; }}</p></div>
-  <div><p>{{ $users->Email; }}</p></div>
-  <div><p>{{ $users->ContactNumber; }}</p></div>
-  <div><p>{{ $users->HistoryServices; }}% finished</p></div>
+  <h2>{{ $todos->id; }}</h2>
+  <div><p>{{ $todos->name; }}</p></div>
+  <div><p>{{ $todos->email; }}</p></div>
+  <div><p>{{ $todos->phonenumber; }}</p></div>
+  <div><p>{{ $todos->support; }}</p></div>
 @stop

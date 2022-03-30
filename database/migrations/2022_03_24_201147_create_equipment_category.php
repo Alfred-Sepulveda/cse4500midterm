@@ -21,7 +21,7 @@ return new class extends Migration
             $table->double('Price',20,2);
             $table->enum('category', ['desktop','laptop','phone']);
             $table->DateTime('PurchaseDate');
-            $table->foreignId('manufacurer_id')->constrained('manufacurers')->onDelete('cascade');;
+            //$table->foreignId('manufacurer_id')->constrained('manufacurers')->onDelete('cascade');;
             
         });
     }

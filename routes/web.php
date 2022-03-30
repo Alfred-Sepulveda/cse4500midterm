@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
@@ -46,6 +47,8 @@ Route::resource('/users', UserController::class);
 Route::delete('/users/{users}' , [UserController::class, 'deleteItem'])->name('user.deleteItem');
 
 Route::get('/users/delete/{users}', ['as' => 'user.delete', 'uses' => 'UsersController@destroy']);
+
+Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('user.destroy');
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 

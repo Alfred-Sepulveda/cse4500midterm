@@ -23,8 +23,8 @@
           <td>{{ $customer->email }}</td>
           <td>{{ $customer->phonenumber }}</td>
           <td>{{ $customer->services }}</td>
-          <td><a class="btn btn-default btn-sm" href="{{ route('$customers.show',['customer'=>$customer->id]) }}">View</a>
-          <form action="{{route('$customers.destroy', $customer->id)}}" method="post">
+          <td><a class="btn btn-default btn-sm" href="{{ route('$customer.show',['customer'=>$customer->id]) }}">View</a>
+          <form action="{{route('$customer.destroy', $customer->id)}}" method="post">
                 @csrf
                 @method('delete')
                 <div class="buttons are-rounded are-small">

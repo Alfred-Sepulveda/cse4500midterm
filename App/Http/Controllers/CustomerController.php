@@ -13,7 +13,7 @@ class CustomerController extends Controller
     public function index()
     {
         $customers = Customer::all();
-        return view('customers.list', compact('customers'));
+        return view('customer.list', compact('customers'));
     }
 
     /**
@@ -27,7 +27,7 @@ class CustomerController extends Controller
             'method' => 'POST',
             'url' => route('customer.store')
         ]);
-        return view('customers.create', compact('form'));
+        return view('customer.create', compact('form'));
     }
 
     /**
@@ -53,7 +53,7 @@ class CustomerController extends Controller
     public function show($id)
     {
         $customer = Customer::find($id);
-        return view('customers.show', compact('customer'));
+        return view('customer.show', compact('customer'));
     }
 
     /**
@@ -88,6 +88,6 @@ class CustomerController extends Controller
     public function destroy($id)
     {
         Customer::destroy($id);
-        return redirect('/customers');
+        return redirect('/customer');
     }
 }

@@ -14,7 +14,7 @@ class Customer extends Model
 
     public function historyservices()
     {
-        return $this->belongsTo(Customers::class);
+        return $this->belongsTo(CustomerController::class);
     }
 }
     

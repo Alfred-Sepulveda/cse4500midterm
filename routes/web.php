@@ -45,7 +45,7 @@ Route::resource('/users', UserController::class);
 
 Route::delete('/users/{users}' , [UserController::class, 'deleteItem'])->FirstName('user.deleteItem');
 
-Route::get('/users/delete/{users}', ['as' => 'user.delete', 'uses' => 'UsersController@destroy'])
+Route::get('/users/delete/{users}', ['as' => 'user.delete', 'uses' => 'UsersController@destroy']);
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 

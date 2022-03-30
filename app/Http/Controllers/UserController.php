@@ -25,7 +25,7 @@ class UserController extends Controller
     {
         $form = $formBuilder->create(UserForm::class, [
             'method' => 'POST',
-            'url' => route('users.store')
+            'url' => route('user.store')
         ]);
         return view('users.create', compact('form'));
     }

@@ -7,12 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Model
 {
-    protected $fillable = ['LastName','FirstName','Email','ContactNumber','HistoryServices'];
+    protected $fillable = ['name','email','phonenumber','services'];
     use HasFactory;
 
     protected $table = 'users';
 
-    public function HistoryServices()
+    public function historyservices()
     {
         return $this->belongsTo(Users::class);
     }

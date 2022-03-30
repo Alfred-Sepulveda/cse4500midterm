@@ -36,19 +36,15 @@ Route::get('/equipments', function () {
     return view('equipments');    
 });
 
-
-
-
-
 Route::resource('/equipments', EquipmentController::class);
 
 Route::resource('/customer', CustomerController::class);
 
-Route::delete('/customer/{customers}' , [CustomerController::class, 'deleteItem'])->name('customer.deleteItem');
+//Route::delete('/customer/{customers}' , [CustomerController::class, 'deleteItem'])->name('customer.deleteItem');
 
-Route::get('/customer/delete/{customers}', ['as' => 'customer.delete', 'uses' => 'CustomersController@destroy']);
+//Route::get('/customer/delete/{customers}', ['as' => 'customer.delete', 'uses' => 'CustomersController@destroy']);
 
-Route::delete('/customer/{id}', [CustomerController::class, 'destroy'])->name('customer.destroy');
+//Route::delete('/customer/{id}', [CustomerController::class, 'destroy'])->name('customer.destroy');
 
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 

@@ -7,7 +7,7 @@
 @stop
 
 @section('content')
-  <h2>{{ $users->EmployeeID; }}</h2>
+  <h2>{{ $->EmployeeID; }}</h2>
   <div><p>{{ $users->LastName; }}</p></div>
   <div><p>{{ $users->FirstName; }}</p></div>
   <div><p>{{ $users->Email; }}</p></div>

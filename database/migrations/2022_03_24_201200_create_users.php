@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('FirstName');
             $table->string('Email');
             $table->string('ContactNumber');
-            $table->string('HistoryServices');
+            $table->enum('HistoryServices', ['Desktop Repair', 'Laptop Repair', 'Phone Repair']);
             $table->timestamps();
         });
     }

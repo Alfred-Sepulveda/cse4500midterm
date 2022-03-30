@@ -46,7 +46,7 @@ class UserController extends Controller
             'ContactNumber' => $request->ContactNumber,
             'HistoryServices' => $request->HistoryServices,
         ]);
-        return $this->index();
+        return redirect('/users');
     }
 
     /**

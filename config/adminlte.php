@@ -231,7 +231,7 @@ return [
     ],     
     [
         'text' => 'Equipment Inventory',
-        'icon' => 'fas fa-fw fa-list-alt',
+        'icon' => 'fas fa-fw fa-cart-arrow-down',
         'submenu' => [
             [
                 'text' => 'View Inventory',
@@ -251,7 +251,7 @@ return [
     ],
     [         
         'text' => 'Sales Contact',
-        'icon' => 'fas fa-fw fa-calendar-alt',
+        'icon' => 'fas fa-fw fa-credit-card',
         'submenu' => [
             [
                 'text' => 'View Sales Contacts',
@@ -261,10 +261,10 @@ return [
     ],
     [
         'text' => 'Support',
-        'icon' => 'fas fa-fw fa-newspaper',
+        'icon' => 'fas fa-fw fa-wrench',
         'submenu' => [
             [
-                'text' => 'View Support Contacts',
+                'text' => 'Status of Repair',
                 'url'  => 'todos',
             ],
         ],

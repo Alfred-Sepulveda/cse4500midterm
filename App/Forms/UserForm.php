@@ -5,7 +5,7 @@ namespace App\Forms;
 use Kris\LaravelFormBuilder\Form;
 use Kris\LaravelFormBuilder\Field;
 
-use App\Models\Users;
+use App\Models\User;
 
 
 

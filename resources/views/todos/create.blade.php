@@ -13,6 +13,7 @@
     <x-adminlte-input name="email" label="Email" />
     <x-adminlte-input name="phonenumber" label="Phone Number" />
     <x-adminlte-input name="support" label="Type of Support" />
+    <x-adminlte-input name="progress" type="number" min=0 max=100 label="Progress" />
     <x-adminlte-button type="Submit" label="Submit" />
 </form>
 @stop

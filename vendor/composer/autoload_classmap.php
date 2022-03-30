@@ -12,7 +12,7 @@ return array(
     'App\\Http\\Controllers\\EquipmentController' => $baseDir . '/app/Http/Controllers/EquipmentController.php',
     'App\\Http\\Controllers\\EventController' => $baseDir . '/app/Http/Controllers/EventController.php',
     'App\\Http\\Controllers\\ManufacturerSaleController' => $baseDir . '/app/Http/Controllers/ManufacturerSaleController.php',
-    'App\\Http\\Controllers\\ManufacturerSupportController' => $baseDir . '/app/Http/Controllers/ManufacturerSupportController.php',
+    'App\\Http\\Controllers\\ManufacturerSupportCont' => $baseDir . '/app/Http/Controllers/ManufacturerSupportCont.php',
     'App\\Http\\Controllers\\TodoController' => $baseDir . '/app/Http/Controllers/TodoController.php',
     'App\\Http\\Controllers\\UserController' => $baseDir . '/app/Http/Controllers/UserController.php',
     'App\\Http\\Kernel' => $baseDir . '/app/Http/Kernel.php',

@@ -13,7 +13,10 @@
     <x-adminlte-input name="FirstName" label="First Name" />
     <x-adminlte-input name="Email" label="Email" />
     <x-adminlte-input name="ContactNumber" label="Contact Number" />
-    <x-adminlte-input name="HistoryServices" label="Services Previously Done if any" />
+    <x-adminlte-select name="HistoyServices" label="Services Previously Done if any">
+    <x-adminlte-options :options="['Desktop Repair', 'Laptop Repair','Phone Repair']"
+        empty-option="Select a Repair Service"/>
+    </x-adminlte-select>
     <x-adminlte-button type="Submit" label="Submit" />
 </form>
 @stop

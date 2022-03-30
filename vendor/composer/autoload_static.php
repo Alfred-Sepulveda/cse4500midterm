@@ -518,7 +518,7 @@ class ComposerStaticInit6504723e056de6aca7361244f6e26f53
         'App\\Http\\Controllers\\EquipmentController' => __DIR__ . '/../..' . '/app/Http/Controllers/EquipmentController.php',
         'App\\Http\\Controllers\\EventController' => __DIR__ . '/../..' . '/app/Http/Controllers/EventController.php',
         'App\\Http\\Controllers\\ManufacturerSaleController' => __DIR__ . '/../..' . '/app/Http/Controllers/ManufacturerSaleController.php',
-        'App\\Http\\Controllers\\ManufacturerSupportController' => __DIR__ . '/../..' . '/app/Http/Controllers/ManufacturerSupportController.php',
+        'App\\Http\\Controllers\\ManufacturerSupportCont' => __DIR__ . '/../..' . '/app/Http/Controllers/ManufacturerSupportCont.php',
         'App\\Http\\Controllers\\TodoController' => __DIR__ . '/../..' . '/app/Http/Controllers/TodoController.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',

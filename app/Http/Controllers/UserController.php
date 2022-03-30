@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Kris\LaravelFormBuilder\FormBuilder;
+use App\Forms\UserForm;
 
 class UserController extends Controller
 {
@@ -21,7 +23,11 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('users.create');
+        $form = $formBuilder->create(UserForm::class, [
+            'method' => 'POST',
+            'url' => route('user.store')
+        ]);
+        return view('equipment.create', compact('form'));
     }
 
     /**
@@ -30,23 +36,12 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(FormBuilder $formBuilder)
     {
-        $validated = $request->validate([
-            'LastName' => 'required',
-            'FirstName' => 'required',
-            'Email' => 'required',
-            'ContactNumber' => 'required',
-            'HistoryServices' => 'required',
-        ]);
-        $user = User::create([
-            'LastName' => $request->LastName,
-            'FirstName' => $request->FirstName,
-            'Email' => $request->Email,
-            'ContactNumber' => $request->ContactNumber,
-            'HistoryServices' => $request->HistoryServices,
-        ]);
-        return redirect('/users');
+        $form = $formBuilder->create(UserForm::class);
+        $form->redirectIfNotValid();
+        User::create($form->getFieldValues());
+        return $this->index();
     }
 
     /**
@@ -92,8 +87,7 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::find($id);
-        $user->delete();
+        User::destroy($id);
         return redirect('/users');
     }
 }

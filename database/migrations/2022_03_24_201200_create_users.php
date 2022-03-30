@@ -15,11 +15,10 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('LastName');
-            $table->string('FirstName');
-            $table->string('Email');
-            $table->string('ContactNumber');
-            $table->enum('HistoryServices', ['Desktop Repair', 'Laptop Repair', 'Phone Repair']);
+            $table->string('name');
+            $table->string('email');
+            $table->string('phonenumber');
+            $table->enum('services', ['Desktop Repair', 'Laptop Repair', 'Phone Repair']);
             $table->timestamps();
         });
     }

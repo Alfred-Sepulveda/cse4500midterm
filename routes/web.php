@@ -4,8 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ManufacturerSaleController;
 use App\Http\Controllers\EquipmentController;
-use App\Http\Controllers\ManufacturerSupportCont;
-use App\Http\Controllers\TodosController;
+//use App\Http\Controllers\ManufacturerSupportCont;
+//use App\Http\Controllers\TodosController;
+use App\Http\Controllers\NotesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,17 +35,10 @@ Route::get('/equipments', function () {
     return view('equipments');    
 });
 
-Route::get('/db-test', function (){
-    try {
-        echo \DB::connection()->getDatabaseName();
-    } catch (\Exception $e) {
-        echo 'None';
-    }
-});
-Route::get('/db-migrate', function () {
-    Artisan::call('migrate');
-    echo Artisan::output();
-});
+
+
+
+
 Route::resource('/equipments', EquipmentController::class);
 
 Route::resource('/users', UserController::class);
@@ -52,6 +46,10 @@ Route::resource('/users', UserController::class);
 Route::resource('/manufacturersales', ManufacturerSaleController::class);
 
 Route::resource('/todos', TodoController::class);
+
+Route::resource('/note', NotesController::class);
+
+
 
 Route::fallback(function (){
     return view('fallback');

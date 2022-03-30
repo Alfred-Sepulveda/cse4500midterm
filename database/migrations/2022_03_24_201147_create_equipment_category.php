@@ -13,13 +13,16 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('equipment', function (Blueprint $table) {
+        Schema::create('equipments', function (Blueprint $table) {
             $table->id();
+            $table->timestamps();
             $table->string('HardwareSpecs');
             $table->integer('PurchaseInvoice');
             $table->double('Price',20,2);
+            $table->enum('category', ['desktop','laptop','phone']);
             $table->DateTime('PurchaseDate');
-            $table->timestamps();
+            $table->foreignId('manufacurer_id')->constrained('manufacurers')->onDelete('cascade');;
+            
         });
     }
 

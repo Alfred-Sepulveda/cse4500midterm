@@ -1,5 +1,5 @@
 @extends('adminlte::page')
 
 @section('content')
-    {!!form($form) !!}
+    {!! form($form) !!}
 @endsection

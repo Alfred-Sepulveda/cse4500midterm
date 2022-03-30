@@ -3,7 +3,7 @@
 @section('title', 'Company')
 
 @section('content_header')
-    <h1>Company Sales Page </h1>
+    <h1>Company Sales Contact Input </h1>
 @stop
 
 @section('content')

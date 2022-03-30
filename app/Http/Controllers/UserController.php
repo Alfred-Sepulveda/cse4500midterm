@@ -21,7 +21,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(FormBuilder $formBuilder)
     {
         $form = $formBuilder->create(UserForm::class, [
             'method' => 'POST',

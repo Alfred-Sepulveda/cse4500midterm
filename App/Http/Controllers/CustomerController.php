@@ -7,6 +7,8 @@ use App\Models\Customer;
 use Kris\LaravelFormBuilder\FormBuilder;
 use App\Forms\CustomerForm;
 
+
+
 class CustomerController extends Controller
 {
 
@@ -30,6 +32,7 @@ class CustomerController extends Controller
         return view('customer.create', compact('form'));
     }
 
+
     /**
      * Store a newly created resource in storage.
      *
@@ -43,7 +46,6 @@ class CustomerController extends Controller
         Customer::create($form->getFieldValues());
         return $this->index();
     }
-
     /**
      * Display the specified resource.
      *

@@ -12,7 +12,7 @@ class User extends Model
 
     protected $table = 'users';
 
-    public function users()
+    public function HistoryServices()
     {
         return $this->belongsTo(Users::class);
     }

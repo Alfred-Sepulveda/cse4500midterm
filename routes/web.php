@@ -29,9 +29,9 @@ Route::get('/manufacturersales', function () {
 Route::get('/todos', function (){
     return view('todos');
 });
-Route::get('/users', function () {
+/*Route::get('/users', function () {
     return view('users');
-});
+});*/
 Route::get('/equipments', function () {
     return view('equipments');    
 });

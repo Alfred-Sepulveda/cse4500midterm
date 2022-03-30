@@ -24,15 +24,21 @@ class TodoController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'title' => 'required',
+            'name' => 'required',
+            'email' => 'required',
+            'phonenumber' => 'required',
+            'support' => 'required',
             'progress' => 'required',
         ]);
         $todo = Todo::create([
-            'title' => $request->title,
+            'name' => $request->name,
+            'email' => $request->email,
+            'phonenumber' => $request->phonenumber,
+            'support' => $request->support,
             'progress' => $request->progress,
         ]);
-        //return $this->index();
-        return view('todos', compact('todos'));
+        return $this->index();
+        //return view('todos', compact('todos'));
 
     }
 

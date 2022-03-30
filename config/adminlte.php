@@ -241,7 +241,7 @@ return [
     ],
     [
         'text' => 'Users',
-        'icon' => 'fas fa-fw fa-list-alt',
+        'icon' => 'fas fa-fw fa-user',
         'submenu' => [
             [
                 'text' => 'View Users',

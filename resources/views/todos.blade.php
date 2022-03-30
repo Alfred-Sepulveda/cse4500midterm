@@ -3,7 +3,7 @@
 @section('title', 'To Do List')
 
 @section('content_header')
-    <h1>To Do's</h1>
+    <h1>Support</h1>
 @stop
 
 @section('content')
@@ -12,7 +12,7 @@
     <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Action</th>
+          <th style="width: 10px">#</th><th>Name</th><th>Email</th><th>Support</th><th style="width: 40px">Action</th>
         </tr>
       </thead>
       <tbody>

@@ -14,7 +14,7 @@
     <x-adminlte-input name="Email" label="Email" />
     <x-adminlte-input name="ContactNumber" label="Contact Number" />
     <x-adminlte-select name="HistoryServices" label="Services">
-    <x-adminlte-options :options="['Desktop Repair'=>'Desktop Repair','Laptop_Repair'=>'Laptop Repair','Phone Repair'=>'Phone Repair']"
+    <x-adminlte-options :options="['Desktop Repair'=>'Desktop Repair','Laptop Repair'=>'Laptop Repair','Phone Repair'=>'Phone Repair']"
         empty-option="Select Repair Service"/>
     </x-adminlte-select>
     <x-adminlte-button type="Submit" label="Submit" />

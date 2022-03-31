@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('phonenumber');
-            $table->string('support');
+            $table->enum('support', ['Desktop Repair', 'Laptop Repair', 'Phone Repair']);
             $table->tinyInteger('progress');
             $table->timestamps();
         });
